@@ -16,3 +16,12 @@ Examples:
 Notes:
 
   If given an empty array, return 0.
+
+----------------------------------------------------------------------------------------------------------
+
+Solution:
+
+function sumOfCubes($nums) {
+    return array_sum(array_map(function ($v){
+	    return pow($v,3);},$nums));
+}
