@@ -15,3 +15,14 @@ Notes:
   
   Return all even numbers in the order they were given.
   All test cases contain valid numbers ranging from 1 to 3000.
+
+
+----------------------------------------------------------------------------------------------------------
+
+SOlution:
+
+function noOdds($arr) {
+	return array_filter($arr,function ($val){ //$val= value
+		return $val % 2 == 0;
+	});
+	}
